@@ -1,1 +1,2 @@
-# Projeto_Aether_Tech
+# Projeto Aether Tech
+- Site desenvolvido com Flask e Javascript.

@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+  body {
+      margin: 0;
+      background-color: #f4f4f4;
+  }
+}
+
+main {
+  margin: 0;  
+  padding: 0; 
+}
+
+header{
+    margin-top: 0%;
+    padding: 15px 11%;
+    background: transparent;
+    font-family: 'Comfortaa';
+    width: 100%;
+    
+}
+
+.myName{
+    color: #000000;
+    font-size: 25px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    transition: .5s;
+    
+}
+header a:hover{
+    color: #086b4d69;
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+button{
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #22795e;;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
+button:hover{
+    background-color: #3B6654;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 0;
+  }
+  
+  .logo-section .logo {
+    font-size: 84px;
+    letter-spacing: 12px;
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .logo-section .logo span {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .logo-section .logo .up {
+    top: -20px;
+  }
+  
+  .logo-section .logo .down {
+    top: 20px;
+  }
+  
+  .logo-section .subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-top: 2%;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+  .up{
+    animation:
+      bounce 600ms
+      alternate infinite   
+  }
+
+  .down{
+    animation:
+      bounce 500ms
+      alternate infinite   
+  }
+  /* Seção 02 */
+
+  .titulo02{
+    text-align: center;
+    width: 100%;
+  }
+
+  .chamada01{
+    color: #3e9277e2;
+    font-size: 20px;
+  }
+
+.cards{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card01{
+    width: 40%;
+    padding: 80px;
+    font-size: larger;
+    color: #0000008d;
+    border-radius: 100px 0px 0px 100px;
+    background: linear-gradient(90deg, rgb(153, 179, 170) 0%, rgb(205, 224, 219) 46%, rgba(255,255,255,1) 100%);
+}
+
+.card02{
+    width: 40%;
+    font-size: larger;
+    color: #0000008d;
+    padding: 80px;
+    border-radius: 100px 0px 0px 100px;
+    background: linear-gradient(90deg, rgb(153, 179, 170) 0%, rgb(205, 224, 219) 46%, rgba(255,255,255,1) 100%);
+}
+
+
+/* Secao03 */
+
+.secao-identidade {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.secao-identidade h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.secao-identidade p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.container-grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    gap: 6rem; 
+    flex-wrap: wrap;
+}
+
+.linha.meio {
+    align-items: center;
+}
+
+.linha.meio span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #006666;
+}
+
+.linha span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.linha img {
+    width: 320px;
+    height: auto;
+    margin: 0 3rem; 
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .linha {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .linha img {
+        width: 200px;
+        margin: 2rem 0;
+    }
+}
+
+/* secao 04 */
+
+.tituloSecao{
+    width: 40%;
+    gap: 5%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tituloSecao img{
+    width: 300px;
+    margin-left: -4%;
+}
+
+.tituloSecao h1{
+    margin-top: 16%;
+    font-size: 40px;
+}
+
+
+  

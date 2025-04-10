@@ -63,7 +63,7 @@ button{
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
-    background-color: #22795e;;
+    background-color: #3B6654;;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -72,7 +72,7 @@ button{
 }
 
 button:hover{
-    background-color: #3B6654;
+    background-color: #3b665492;
 }
 
 .logo-section {
@@ -256,13 +256,123 @@ button:hover{
 
 .tituloSecao img{
     width: 300px;
-    margin-left: -4%;
+    margin-left: 0;
 }
 
 .tituloSecao h1{
     margin-top: 16%;
-    font-size: 40px;
+    font-size: 42px;
+    text-align: left;
+}
+
+.containerServPersonalizados {
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+.alinhamentoHorizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.alinhamentoHorizontal.invertido {
+    flex-direction: row-reverse;
+}
+
+.circuloWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoWrapper {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.textoWrapper h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.textoWrapper h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60%;
+    height: 2px;
+    background: #3a8b6b;
+    border-radius: 2px;
+}
+
+.textoWrapper p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #444;
+}
+
+.circuloSobrepostoWrapper {
+    position: relative;
+    width: 500px; /* Aumentado */
+    height: 500px; /* Aumentado */
+}
+
+.circuloBase {
+    background: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(58, 139, 107) 0px 8px 24px,
+                rgba(59, 159, 136, 0.452) 0px 16px 56px,
+                rgba(58, 165, 140, 0.589) 0px 24px 80px;
+}
+
+.imagemSobreposta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%; 
+    height: 90%; 
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
 
 
-  
+/* secao 05 */
+
+.tituloSecao02 {
+    width: 51%;
+    gap: 2%;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.tituloSecao02 img {
+    width: 300px;
+    margin-right: 0;
+}
+
+.tituloSecao02 h1 {
+    margin-top: 16%;
+    font-size: 42px;
+    text-align: right;
+}
+
+
+

@@ -1,150 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
+
+      <!-- Google fonts - "Josefin Sans" -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Aether</title>
 </head>
+
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo1">
-                <a href="#">
-                    <H3 class="NomeEmpresa">Aether Tech</H3>
-                </a>    
-            </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Nossos serviços</a></li>
-                    <li><a href="#">Cases de sucesso</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato">
-                <a href="/login">
-                    <button>Entre em contato</button>
-                </a>
-            </div>
-        </div>
-    </header>
+    {% extends "base.html" %}
+   
+
+    {% block conteudo %}
     <section class="logo-section">
         <h1 class="logo">
-          <span class="up">A</span>
-          <span class="down">E</span>
-          <span class="up">T</span>
-          <span class="down">H</span>
-          <span class="up">E</span>
-          <span class="down">R</span>
+            <span class="up">A</span>
+            <span class="down">E</span>
+            <span class="up">T</span>
+            <span class="down">H</span>
+            <span class="up">E</span>
+            <span class="down">R</span>
         </h1>
         <p class="subtitle">TECH</p>
-      </section>
+    </section>
 
-      <section class="secao02">
+    <section class="secao02">
         <div class="titulo02">
             <p class="chamada01">Mais do que a solução que procurava !</p>
             <br><br><br><br>
             <div class="cards">
-                <div class="card01">
+                <div class="card">
                     <p>Alinhado com as principais stacks do mercado</p>
                 </div>
-                <div class="card02">
+                <div class="card">
                     <p>Sua parceira em inovação tecnológica</p>
                 </div>
             </div>
             <br><br><br>
         </div>
-      </section>
-      <br><br>
-        <section class="secao-identidade">
-            <h2>Somos a Aether Tech</h2>
-            <p>Vamos transformar desafios em oportunidades</p>
+    </section>
+    <br><br>
+    <section class="secao-identidade">
+        <h2>Somos a Aether Tech</h2>
+        <p>Vamos transformar desafios em oportunidades</p>
+
+        <div class="container-grafico">
+            <div class="linha cima">
+                <span>+ Automação Robótica de Processos</span>
+                <span>+ Agentes de IA</span>
+            </div>
+            <div class="linha meio">
+                <span class="esquerda">+ Inteligência Artificial</span>
+                <img src="static/img/quadrado.png" alt="Gráfico 3D">
+                <span class="direita">+ Desenvolvimento Web</span>
+            </div>
+            <div class="linha baixo">
+                <span>+ Projetos de Engenharia de dados</span>
+                <span>+ Análise de dados</span>
+            </div>
+        </div>
+    </section>
+    <section class="secao04">
+        <div class="tituloSecao">
+            <img src="static\img\bolinhas.png" alt="">
+            <h1>Serviços Personalizados</h1>
+        </div>
+        <div class="containerServPersonalizados">
+            <div class="alinhamentoHorizontal">
+                <div class="circuloWrapper">
+                    <div class="circuloSobrepostoWrapper">
+                        <div class="circuloBase"></div>
+                        <img class="imagemSobreposta" src="static\img\aceleIA.png" alt="Gráfico IA">
+                    </div>
+                </div>
+                <div class="textoWrapper">
+                    <h2>Aceleração de serviços de IA</h2>
+                    <br><br>
+                    <p>Acelere seus serviços de IA com performance de ponta. Reduza o tempo de resposta, aumente a
+                        eficiência dos seus modelos e mantenha sua empresa à frente da concorrência com soluções
+                        otimizadas para inferência em escala.</p>
+                    <br>
+                    <div class="btn-contato">
+                        <a href="/">
+                            <button>Saiba mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alinhamentoHorizontal invertido">
+                <div class="circuloWrapper">
+                    <div class="circuloSobrepostoWrapper">
+                        <div class="circuloBase"></div>
+                        <img class="imagemSobreposta" src="static\img\devSistemas.png" alt="Gráfico Sistema">
+                    </div>
+                </div>
+                <div class="textoWrapper">
+                    <h2>Integração e Desenvolvimento de sistemas</h2>
+                    <br><br>
+                    <p>Modernize sua arquitetura com aplicações escaláveis e interfaces intuitivas. Do front-end ao
+                        back-end baseado em microserviços, entregamos sistemas ágeis, seguros e prontos para evoluir com
+                        o seu negócio.</p>
+                    <br>
+                    <div class="btn-contato">
+                        <a href="/">
+                            <button>Saiba mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secao05">
+        <div class="tituloSecao02">
+            <img src="static\img\bolinhas.png" alt="">
+            <h1>O método Aether Tech</h1>
+        </div>
+        <div class="containerMetodo">
+            <div class="formaFundo"></div>
+            <div class="quadrados">
+                <div class="quadrado">
+                    <h3 class="verde">Inovação</h3>
+                    <p class="branco">Inove e inspire junto à Aether Tech</p>
+                </div>
+                <div class="quadrado">
+                    <h3 class="verde">Velocidade</h3>
+                    <p class="branco">Alcance seus objetivos</p>
+                </div>
+                <div class="quadrado"></div>
+                <div class="quadrado"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao04">
+        <div class="tituloSecao">
+            <img src="static\img\bolinhas.png" alt="">
+            <h1>Entre em contato conosco</h1>
+        </div>
         
-            <div class="container-grafico">
-                <div class="linha cima">
-                    <span>+ Automação Robótica de Processos</span>
-                    <span>+ Agentes de IA</span>
-                </div>
-                <div class="linha meio">
-                    <span class="esquerda">+ Inteligência Artificial</span>
-                    <img src="static/img/quadrado.png" alt="Gráfico 3D">
-                    <span class="direita">+ Desenvolvimento Web</span>
-                </div>
-                <div class="linha baixo">
-                    <span>+ Projetos de Engenharia de dados</span>
-                    <span>+ Análise de dados</span>
-                </div>
-            </div>
-        </section>
-        <section class="secao04">
-            <div class="tituloSecao">
-                <img src="static\img\bolinhas.png" alt="">
-                <h1>Serviços Personalizados</h1>
-            </div>
-            <div class="containerServPersonalizados">
-                <div class="alinhamentoHorizontal">
-                    <div class="circuloWrapper">
-                        <div class="circuloSobrepostoWrapper">
-                            <div class="circuloBase"></div>
-                            <img class="imagemSobreposta" src="static\img\aceleIA.png" alt="Gráfico IA">
-                        </div>
+        <div class="contato-container">
+            <div class="form-wrapper">
+                <form class="form-contato" action="/contato" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
                     </div>
-                    <div class="textoWrapper">
-                        <h2>Aceleração de serviços de IA</h2>
-                        <br><br>
-                        <p>Acelere seus serviços de IA com performance de ponta. Reduza o tempo de resposta, aumente a eficiência dos seus modelos e mantenha sua empresa à frente da concorrência com soluções otimizadas para inferência em escala.</p>
-                        <br>
-                        <div class="btn-contato">
-                            <a href="/">
-                                <button>Saiba mais</button>
-                            </a>
-                        </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Entrar em contato</button>
+                </form>
+            </div>
             
-                <div class="alinhamentoHorizontal invertido">
-                    <div class="circuloWrapper">
-                        <div class="circuloSobrepostoWrapper">
-                            <div class="circuloBase"></div>
-                            <img class="imagemSobreposta" src="static\img\devSistemas.png" alt="Gráfico Sistema">
-                        </div>
-                    </div>
-                    <div class="textoWrapper">
-                        <h2>Integração e Desenvolvimento de sistemas</h2>
-                        <br><br>
-                        <p>Modernize sua arquitetura com aplicações escaláveis e interfaces intuitivas. Do front-end ao back-end baseado em microserviços, entregamos sistemas ágeis, seguros e prontos para evoluir com o seu negócio.</p>
-                        <br>
-                        <div class="btn-contato">
-                            <a href="/">
-                                <button>Saiba mais</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>                       
-        </section>
-        <section class="secao05">
-            <div class="tituloSecao02">
-                <img src="static\img\bolinhas.png" alt="">
-                <h1>O método Aether Tech</h1>
+            
+            <div class="imagem-contato">
+                <img src="/static/img/image_form_contato.png" alt="Analytics Dashboard">
             </div>
-            <div class="containerMetodo">
-                <div class="formaFundo"></div>
-                <div class="quadrados">
-                    <div class="quadrado">
-                        <h3 class="verde">Inovação</h3>
-                        <p class="branco">Inove e inspire junto à Aether Tech</p>
-                    </div>
-                    <div class="quadrado">
-                        <h3 class="verde">Velocidade</h3>
-                        <p class="branco">Alcance seus objetivos</p>
-                    </div>
-                    <div class="quadrado"></div>
-                    <div class="quadrado"></div>
-                </div>
-            </div>            
-        </section>
-      
+            <div class="linha-vertical"></div>
+        </div>
+    </section>
+   
+    {% endblock %}
 </body>
+
 </html>

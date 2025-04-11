@@ -2,14 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
+
 
 body{
   body {
       margin: 0;
       background-color: #f4f4f4;
   }
+
+    font-family: "Josefin Sans", sans-serif;
+  
+}
+button, a , li, ul, span{
+    font-family: "Josefin Sans", sans-serif;
+
 }
 
 main {
@@ -17,64 +24,8 @@ main {
   padding: 0; 
 }
 
-header{
-    margin-top: 0%;
-    padding: 15px 11%;
-    background: transparent;
-    font-family: 'Comfortaa';
-    width: 100%;
-    
-}
 
-.myName{
-    color: #000000;
-    font-size: 25px;
-}
-
-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    transition: .5s;
-    
-}
-header a:hover{
-    color: #086b4d69;
-}
-
-header nav ul{
-    list-style-type: none;
-    
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
-}
-
-button{
-    padding: 10px 40px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-    background-color: #3B6654;;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-    
-}
-
-button:hover{
-    background-color: #3b665492;
-}
-
+/* Secao 01 */
 .logo-section {
     display: flex;
     flex-direction: column;
@@ -91,13 +42,14 @@ button:hover{
     font-size: 84px;
     letter-spacing: 12px;
     font-weight: bold;
-    font-family: 'Comfortaa', sans-serif;
     margin-bottom: 10px;
   }
-  
+ 
   .logo-section .logo span {
     display: inline-block;
     position: relative;
+    font-family:'Roboto', sans-serif;
+
   }
   
   .logo-section .logo .up {
@@ -107,6 +59,7 @@ button:hover{
   .logo-section .logo .down {
     top: 20px;
   }
+  
   
   .logo-section .subtitle {
     font-size: 20px;
@@ -135,6 +88,20 @@ button:hover{
       bounce 500ms
       alternate infinite   
   }
+  @media (max-width: 768px) {
+    .logo-section .logo {
+        font-size: 42px;
+        letter-spacing: 6px;
+    }
+    .logo-section .logo .up {
+        top: -10px;
+    }
+    .logo-section .logo .down {
+        top: 10px;
+    }
+  }
+
+
   /* Seção 02 */
 
   .titulo02{
@@ -144,11 +111,10 @@ button:hover{
 
   .chamada01{
     color: #3e9277e2;
-    font-size: 20px;
+    font-size: xx-large;
   }
-
-.cards{
-    width: 80%;
+  .cards{
+      width: 80%;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -156,22 +122,29 @@ button:hover{
     flex-direction: row;
 }
 
-.card01{
+.card{
     width: 40%;
-    padding: 80px;
     font-size: larger;
-    color: #0000008d;
+    color: #000000ef;
+    padding: 80px;
     border-radius: 100px 0px 0px 100px;
     background: linear-gradient(90deg, rgb(153, 179, 170) 0%, rgb(205, 224, 219) 46%, rgba(255,255,255,1) 100%);
 }
 
-.card02{
-    width: 40%;
-    font-size: larger;
-    color: #0000008d;
-    padding: 80px;
-    border-radius: 100px 0px 0px 100px;
-    background: linear-gradient(90deg, rgb(153, 179, 170) 0%, rgb(205, 224, 219) 46%, rgba(255,255,255,1) 100%);
+@media (max-width: 768px) {
+  .titulo02{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cards{
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+}
+  .card{
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 
@@ -194,6 +167,7 @@ button:hover{
     margin-bottom: 3rem;
 }
 
+
 .container-grafico {
     display: flex;
     flex-direction: column;
@@ -213,16 +187,17 @@ button:hover{
 }
 
 .linha.meio span {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     color: #006666;
 }
 
 .linha span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #000;
 }
+
+
 
 .linha img {
     width: 320px;
@@ -296,7 +271,6 @@ button:hover{
 
 .textoWrapper {
     flex: 1;
-    font-family: Arial, sans-serif;
     padding: 20px;
 }
 
@@ -434,4 +408,129 @@ button:hover{
     color: #ffffff;
 }
 
+h2{
+    font-weight: 400;
+}
+.linha span{
+    font-weight: 400;
+}
 
+/* Seção Contato */
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+    width: 70%;
+
+}
+
+.form-wrapper {
+    flex: 1;
+    max-width: 60%;
+    padding: 20px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+   
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #006666;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: -20px;
+    margin-left: 10px;
+    z-index: 2;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 5px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #00000028;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #006666;
+}
+
+.btn-enviar {
+    background-color: #006666;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #005555;
+}
+
+
+
+
+.linha-vertical {
+    width: 30%;
+    height: 700px;
+    background-color: #057471;
+    
+    position: absolute;
+    right: -10%;
+    z-index: -2;
+}
+
+.imagem-contato img{
+   
+    min-height: 500px;
+   
+}
+
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .linha-vertical {
+       
+        
+    }
+
+    .form-wrapper, .imagem-contato {
+        max-width: 100%;
+    }
+
+    .btn-enviar {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2{
+        font-size: medium;
+    }
+}

@@ -509,6 +509,68 @@ h2{
    
 }
 
+
+/* secao 06 */
+
+.cardAlc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .cardAlc-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cardAlc-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family: sans-serif;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .cardAlc-conteudo.esquerda {
+    align-items: left;
+    margin-right: 15%;
+    color: #ffffff;
+    width: 65%;
+    background: linear-gradient(to right, #000000 60%, transparent);
+  }
+  
+  .cardAlc-conteudo.direita {
+    align-items: right;
+    margin-left: 15%;
+    width: 65%;
+    background: linear-gradient(to left, #A4D2CD 40%, transparent);
+  }
+  
+  .cardAlc-conteudo h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+  
+  .cardAlc-conteudo p {
+    margin: 0 auto;
+    font-size: 0.95rem;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .colorido .cardAlc-content {
+    color: #000;
+  }
+  
+
+
 @media (max-width: 768px) {
     .contato-container {
         flex-direction: column;

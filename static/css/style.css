@@ -490,22 +490,44 @@ h2{
     background-color: #005555;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.show-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cardAlc-conteudo.esquerda.hidden {
+    transform: translateX(-100px);
+}
+
+.cardAlc-conteudo.direita.hidden {
+    transform: translateX(100px);
+}
 
 
 
 .linha-vertical {
-    width: 30%;
+    width: 40%;
     height: 700px;
     background-color: #057471;
-    
     position: absolute;
-    right: -10%;
+    right: -22%;
     z-index: -2;
 }
 
 .imagem-contato img{
-   
-    min-height: 500px;
+    max-height: 500px;
+    border-radius: 15px;
    
 }
 
@@ -568,6 +590,35 @@ h2{
   .colorido .cardAlc-content {
     color: #000;
   }
+
+/* secao 07 */
+
+.cardsSuporte{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #00555511;
+    border-radius: 15px;
+}
+
+.cardSup01, .cardSup02, .cardSup03{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding: 10%;
+    border-radius: 15px;
+}
+
+.tituloSup{
+    font-size: xx-large;
+}
+
+
   
 
 

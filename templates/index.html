@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
       <!-- Google fonts - "Josefin Sans" -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
 
     {% block conteudo %}
     <section class="logo-section">
+        <div id="particles-js"></div>
         <h1 class="logo">
             <span class="up">A</span>
             <span class="down">E</span>
@@ -67,9 +68,13 @@
         </div>
     </section>
     <section class="secao04">
-        <div class="tituloSecao">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>Serviços Personalizados</h1>
+        <div class="tituloSecao02 direito">
+            <div class="bolinhas-destaque">
+                <div class="bolinha up"></div>
+                <div class="bolinha down"></div>
+                <div class="bolinha up"></div>
+            </div>
+            <h1>Serviços <span>Personalizados</span></h1>
         </div>
         <div class="containerServPersonalizados">
             <div class="alinhamentoHorizontal">
@@ -115,39 +120,58 @@
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </section>
-    <section class="secao05">
-        <div class="tituloSecao02">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>O método Aether Tech</h1>
+   <section class="secao05">
+    <div class="tituloSecao02">
+        <h1>O método <span>Aether Tech</span></h1>
+        <div class="bolinhas-destaque">
+            <div class="bolinha down"></div>
+            <div class="bolinha up"></div>
+            <div class="bolinha down"></div>
         </div>
-        <div class="containerMetodo">
-            <div class="formaFundo"></div>
-            <div class="quadrados">
-                <div class="quadrado">
-                    <h3 class="verde">Diagnosticar</h3>
-                    <p class="branco">Entendemos seus desafios reais e mapeamos oportunidades.</p>
-                </div>
-                <div class="quadrado">
-                    <h3 class="verde">Planejar</h3>
-                    <p class="branco">Criamos estratégias sob medida com foco em inovação.</p>
-                </div>
-                <div class="quadrado">
-                    <h3 class="verde">Construir</h3>
-                    <p class="branco">Desenvolvemos soluções tecnológicas eficientes e escaláveis.</p>
-                </div>
-                <div class="quadrado">
-                    <h3 class="verde">Acelerar</h3>
-                    <p class="branco">Otimizamos resultados com IA, dados e automação inteligente.</p>
-                </div>
+    </div>
+    
+    <div class="containerMetodo">
+        <div class="formaFundo"></div>
+        <div class="quadrados">
+            <div class="quadrado">
+                <div class="quadrado-icon">1</div>
+                <h3 class="verde">Diagnosticar</h3>
+                <p class="branco">Entendemos seus desafios reais e mapeamos oportunidades com precisão.</p>
+                <div class="quadrado-detalhe"></div>
+            </div>
+            <div class="quadrado">
+                <div class="quadrado-icon">2</div>
+                <h3 class="verde">Planejar</h3>
+                <p class="branco">Criamos estratégias sob medida com foco em inovação e resultados.</p>
+                <div class="quadrado-detalhe"></div>
+            </div>
+            <div class="quadrado">
+                <div class="quadrado-icon">3</div>
+                <h3 class="verde">Construir</h3>
+                <p class="branco">Desenvolvemos soluções tecnológicas eficientes e escaláveis.</p>
+                <div class="quadrado-detalhe"></div>
+            </div>
+            <div class="quadrado">
+                <div class="quadrado-icon">4</div>
+                <h3 class="verde">Acelerar</h3>
+                <p class="branco">Otimizamos resultados com IA, dados e automação inteligente.</p>
+                <div class="quadrado-detalhe"></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section class="secao06">
-        <div class="tituloSecao">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>O que podemos alcançar ?</h1>
+        <div class="tituloSecao02 direito">
+            <div class="bolinhas-destaque">
+                <div class="bolinha up"></div>
+                <div class="bolinha down"></div>
+                <div class="bolinha up"></div>
+            </div>
+            <h1>O que <span>podemos </span>alcançar <span>?</span></h1>
         </div>
 
         <div class="cardAlc">
@@ -186,39 +210,97 @@
                   
     </section>
 
-    <section class="secao07">
-        <div class="tituloSecao02">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>Nosso amplo suporte</h1>
+
+    <section class="projects-section">
+    <div class="tituloSecao02">
+        <h1>Cases de <span>Sucesso</span></h1>
+        <div class="bolinhas-destaque">
+            <div class="bolinha down"></div>
+            <div class="bolinha up"></div>
+            <div class="bolinha down"></div>
         </div>
-        <div class="cardsSuporte">
-            <div class="cardSup01">
-                <h1 class="tituloSup">24h</h1>
-                <h2>With desktop</h2>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="static\img\projetoEmc.png" alt="Dashboard Analytics">
+                <div class="tech-tags">
+                    <span class="tag">Desenvolvimento</span>
+                    <span class="tag">Site</span>
+                </div>
             </div>
-            <div class="cardSup02">
-                <h1 class="tituloSup">+85%</h1>
-                <h2>With desktop</h2>
-            </div>
-            <div class="cardSup03">
-                <h1 class="tituloSup">+305</h1>
-                <h2>With desktop</h2>
+            <div class="project-content">
+                <h3>Espaço Mulher Campesina</h3>
+                <p class="project-description">Sistema de análise preditiva que aumentou a precisão de forecasts em 73%.</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <span class="metric-value">+73%</span>
+                        <span class="metric-label">Precisão</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">12s</span>
+                        <span class="metric-label">Processamento</span>
+                    </div>
+                </div>
+                <a href="https://www.espacomulhercampesina.com.br/" class="project-link">
+                    <span>Acessar Projeto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#007F7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </div>
 
-    </section>
+    </div>
 
-    <section class="secao08">
-        <div class="tituloSecao">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>Nossos projetos</h1>
+    <div class="section-footer">
+        <a href="#" class="view-all">Ver todos os projetos
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#007F7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+</section>
+
+    <div id="chat-button">
+    <i class="bi bi-robot"></i>
+    <div class="notification-badge"></div>
+</div>
+
+<div id="chat-container">
+    <div id="chat-header">
+        <div class="header-content">
+            <i class="bi bi-robot"></i>
+            <span>AetherBot</span>
         </div>
-    </section>
+        <div class="header-actions">
+            <i class="bi bi-dash minimize-btn"></i>
+            <i class="bi bi-x close-btn"></i>
+        </div>
+    </div>
+    <div id="chat-messages">
+        <div class="message bot">
+            <div class="message-content">🤖 Olá! Como posso ajudar hoje?</div>
+            <div class="message-time">10:42</div>
+        </div>
+    </div>
+    <div id="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+        <button id="send-button">
+            <i class="bi bi-send"></i>
+        </button>
+    </div>
+</div>
 
     <section class="secao04">
-        <div class="tituloSecao">
-            <img src="static\img\bolinhas.png" alt="">
-            <h1>Entre em contato conosco</h1>
+        <div class="tituloSecao02 direito">
+            <div class="bolinhas-destaque">
+                <div class="bolinha up"></div>
+                <div class="bolinha down"></div>
+                <div class="bolinha up"></div>
+            </div>
+            <h1>Entre em <span>Contato</span> conosco</h1>
         </div>
         
         <div class="contato-container">

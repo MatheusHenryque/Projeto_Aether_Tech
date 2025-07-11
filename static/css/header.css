@@ -5,8 +5,8 @@ header{
     left: 0;
     width: 100%;
     padding: 15px 11%;
-  
     z-index: 1000;
+    position: fixed;
 }
 
 .interface {
@@ -31,7 +31,7 @@ header{
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #006666;
+    background-color: #007F7F;
     transition: all 0.3s ease;
 }
 
@@ -82,39 +82,39 @@ header{
     display: block;
 }
 
-.btn-contato-mobile {
-    background-color: #006666;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .menu-desktop, .btn-contato {
-        display: none;
+    .btn-contato-mobile {
+        background-color: #007F7F;
+        color: white !important;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin-top: 20px;
+        text-align: center;
     }
 
-    .btn-menu-mobile {
-        display: flex;
-    }
+    @media (max-width: 768px) {
+        .menu-desktop, .btn-contato {
+            display: none;
+        }
 
-    .menu-mobile {
-        display: block;
-    }
+        .btn-menu-mobile {
+            display: flex;
+        }
 
-    header {
-        padding: 15px 5%;
-        background: white;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        position: fixed;
-    }
+        .menu-mobile {
+            display: block;
+        }
 
-    .interface {
-        padding: 0 20px;
+        header {
+            padding: 15px 5%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+        }
+
+        .interface {
+            padding: 0 20px;
+        }
     }
-}
 
 .myName{
     color: #000000;
@@ -146,17 +146,18 @@ header nav ul li{
 
 button{
     padding: 10px 40px;
-    color: #ffffff;
+    color: #007F7F;
     font-size: 13px;
     font-weight: 600;
-    background-color: #3b6654;;
-    border: 0;
-    border-radius: 30px;
+    background-color: #ffffff;;
+    border: 1px solid #007F7F;
+    border-radius: 0px;
     cursor: pointer;
     transition: .2s;
     
 }
 
 button:hover{
-    background-color: #3b665492;
+    background-color: #007f7f;
+    color: #ffffff;
 }

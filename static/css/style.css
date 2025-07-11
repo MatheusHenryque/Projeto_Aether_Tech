@@ -341,6 +341,83 @@ main {
     border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+    .secao04 {
+        padding: 20px 15px;
+    }
+    
+    .tituloSecao02.direito {
+        margin-bottom: 30px;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .tituloSecao02.direito h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .containerServPersonalizados {
+        padding: 0;
+        gap: 50px;
+    }
+    
+    .alinhamentoHorizontal,
+    .alinhamentoHorizontal.invertido {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .circuloSobrepostoWrapper {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .textoWrapper {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .textoWrapper h2 {
+        font-size: 1.5rem;
+    }
+    
+    .textoWrapper h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+    
+    .textoWrapper p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 15px 0;
+    }
+    
+    .btn-contato {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-contato button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .circuloSobrepostoWrapper {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .textoWrapper h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
 
 /* secao 05 */
 /* Estilos Gerais */
@@ -522,7 +599,6 @@ main {
     }
 }
 
-/* Seção Contato */
 .contato-container {
     display: flex;
     justify-content: space-between;
@@ -532,7 +608,6 @@ main {
     padding: 0 20px;
     position: relative;
     width: 70%;
-
 }
 
 .form-wrapper {
@@ -544,7 +619,6 @@ main {
 .form-contato {
     display: flex;
     flex-direction: column;
-   
     gap: 25px;
 }
 
@@ -597,32 +671,6 @@ main {
     background-color: #005555;
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateX(0);
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.show-left {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.show-right {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.cardAlc-conteudo.esquerda.hidden {
-    transform: translateX(-100px);
-}
-
-.cardAlc-conteudo.direita.hidden {
-    transform: translateX(100px);
-}
-
-
-
 .linha-vertical {
     width: 40%;
     height: 700px;
@@ -632,10 +680,86 @@ main {
     z-index: -2;
 }
 
-.imagem-contato img{
+.imagem-contato img {
     max-height: 500px;
     border-radius: 15px;
-   
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .contato-container {
+        width: 85%;
+    }
+    
+    .linha-vertical {
+        right: -18%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+        width: 90%;
+        gap: 40px;
+        padding: 20px;
+    }
+    
+    .form-wrapper {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        order: 2;
+    }
+    
+    .imagem-contato {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .imagem-contato img {
+        max-height: 350px;
+        width: auto;
+        max-width: 100%;
+    }
+    
+    .linha-vertical {
+        display: none;
+    }
+    
+    .btn-enviar {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .form-group label {
+        font-size: 1rem;
+        margin-bottom: -15px;
+    }
+    
+    .form-group input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-enviar {
+        font-size: 1rem;
+    }
+    
+    .imagem-contato img {
+        max-height: 250px;
+    }
+    
+    .tituloSecao02.direito h1 {
+        font-size: 24px;
+    }
 }
 
 

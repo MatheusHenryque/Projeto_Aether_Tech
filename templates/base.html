@@ -13,6 +13,7 @@
   <!-- Google fonts - "Josefin Sans" -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
  <title>Aether</title>
 </head>
@@ -64,39 +65,50 @@
 
     {% block footer%}
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Contato</h3>
-                <ul>
-                    <li><a href="https://instagram.com/aethertech" target="_blank">Instagram</a></li>
-                    <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
-                    <li><a href="mailto:contato@aethertech.com">contato@aethertech.com</a></li>
-                </ul>
-            </div>
-            <div class="footer-pages">
-                <h3>Páginas</h3>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Nossos serviços</a></li>
-                    <li><a href="#">Cases de sucesso</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </div>
-            <div class="footer-pages">
-                <h3>Quem somos</h3>
-                <ul>
-                    <li><a href="#">Valores</a></li>
-                    <li><a href="#">Colaboradores</a></li>
-                </ul>
-            </div>
+    <!-- Conteúdo superior do footer (mantido igual) -->
+    <div class="footer-content">
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <ul>
+                <li><a href="https://instagram.com/aethertech" target="_blank">Instagram</a></li>
+                <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+                <li><a href="mailto:contato@aethertech.com">contato@aethertech.com</a></li>
+            </ul>
         </div>
-        <div class="footer-bottom">
-            <div class="footer-logo">
-                <img src="static/img/quadrado.png" alt="Logo Aether Tech">
-            </div>
-            <p>&copy; 2025 Aether Tech. Todos os direitos reservados.</p>
+        <div class="footer-pages">
+            <h3>Páginas</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Nossos serviços</a></li>
+                <li><a href="#">Cases de sucesso</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-pages">
+            <h3>Quem somos</h3>
+            <ul>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-icons-row">
+        <div class="footer-icon"><i class="bi bi-whatsapp"></i></div>
+        <div class="footer-icon"><i class="bi bi-linkedin"></i></div>
+        <div class="footer-icon"><i class="bi bi-instagram"></i></div>
+        <div class="footer-icon"><i class="bi bi-linkedin"></i></div>
+        <div class="footer-icon"><i class="bi bi-threads"></i></div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="footer-logo">
+            <img src="static/img/quadrado.png" alt="Logo Aether Tech">
+        </div>
+        <p>&copy; 2025 Aether Tech. Todos os direitos reservados.</p>
+    </div>
+</footer>
     {% endblock %}
 
     <script>
@@ -104,8 +116,11 @@
             this.classList.toggle('active');
             document.querySelector('.menu-mobile').classList.toggle('active');
         });
+
     </script>
 
 </body>
 <script src="static\js\index.js"></script>
+<script src="static\js\chatbot.js"></script>
+<script src="static\js\particulas.js"></script>
 </html>
